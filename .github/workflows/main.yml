@@ -1,0 +1,16 @@
+            - name: Deploy Entity Framework Core (EF Core) migrations from a DLL
+  # You may pin to the exact commit or the version.
+  # uses: benday-inc/deploy-ef-core-migration@c3528294048f7bcae2c18c7104d8772a9ce75220
+  uses: benday-inc/deploy-ef-core-migration@v2.1
+  with:
+    # Path to directory that contains all the files
+    path_to_directory: # default is 
+    # DLL that contains the EF migrations to deploy
+    migrations_dll: # default is 
+    # Root namespace for the EF migrations
+    migrations_namespace: # default is 
+    # DLL to start deploying migrations from. If you are publishing migrations from a web project, choose the web project DLL.  Otherwise, choose the migration DLL.
+    startup_dll: # default is 
+    # Class name of the DbContext
+    dbcontext_class_name: # default is 
+          
